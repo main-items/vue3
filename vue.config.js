@@ -25,7 +25,7 @@ module.exports = {
   devServer: {
     hot: true,
     disableHostCheck: true,
-    port: 8007,
+    port: 9000,
     overlay: {
       warnings: false,
       errors: true

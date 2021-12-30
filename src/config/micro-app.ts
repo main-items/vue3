@@ -1,9 +1,9 @@
 import store from '../store'
 const microApps: any = [
   {
-    name: "vue3Vite",
-    entry: "//localhost:9080/vue3Vite",
-    activeRule: "/vue3Vite",
+    name: "vue3",
+    entry: "//localhost:9090/vue3",
+    activeRule: "/vue3",
   }
 ];
 
