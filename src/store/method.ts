@@ -5,6 +5,4 @@ export const actions: any = {
   // 
 }
 
-const method: any = { mutations, actions }
-
-export default method
+export default { mutations, actions }

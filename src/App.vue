@@ -1,18 +1,15 @@
-<template>
-  <div id="nav">
-    <router-link to="/home">Home</router-link> |
-    <router-link to="/user">User</router-link>
-  </div>
-  <router-view />
-  <div id="cnbi-viewport"></div>
-</template>
+<script lang="ts" setup>
+import { NConfigProvider, NGlobalStyle } from 'naive-ui'
+import config from '@config'
+import layout from './layout/index.vue'
+</script>
 
-<style lang="stylus">
-#app
-  font-family Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
-</style>
+<template>
+  <n-config-provider :theme-overrides="config.defaultTheme">
+    <layout>
+      <template v-slot:header ></template>
+      <template v-slot:content ></template>
+    </layout>
+    <n-global-style />
+  </n-config-provider>
+</template>

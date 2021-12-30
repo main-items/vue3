@@ -5,6 +5,4 @@ export const getters: any = {
   //
 }
 
-const variable: any = { state, getters }
-
-export default variable
+export default { state, getters }

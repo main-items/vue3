@@ -1,14 +1,14 @@
 import { createStore } from 'vuex'
 import { state, getters } from './variable'
 import { mutations, actions } from './method'
-const modulesFiles: any = require.context("./modules", true, /\.ts$/)
+const modulesFiles: any = require.context('./modules', true, /\.ts$/)
 const modules: any = {}
 modulesFiles.keys().forEach((key: string) => {
-  const module: any = modulesFiles(key).default
-  const moduleKey: any = `${key.replace(/(\.\/|\.ts)/g, '')}`
+  const module = modulesFiles(key).default
+  const moduleKey = `${key.replace(/(\.\/|\.js)/g, "")}`
 
   modules[module.name || moduleKey] = module
-  modules[module.name || moduleKey]['namespaced'] = true
+  modules[module.name || moduleKey]["namespaced"] = true
 })
 
 const store: any = createStore({
@@ -18,4 +18,5 @@ const store: any = createStore({
   actions,
   modules
 })
+
 export default store

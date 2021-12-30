@@ -10,5 +10,5 @@ export const mutations: any = {
 export const actions: any = {
     
 }
-const settings: any = { state, getters, mutations, actions }
-export default settings
+
+export default { state, getters, mutations, actions }
