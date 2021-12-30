@@ -52,6 +52,7 @@ module.exports = {
   // 自定义webpack配置
   configureWebpack: {
     resolve: {
+      extensions: ['.js', 'ts', '.tsx', '.jsx', '.vue', '.styl', '.json'],
       alias: {
         '@': resolve('src'),
         '@api': resolve('src/api'),
