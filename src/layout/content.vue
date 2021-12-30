@@ -4,7 +4,7 @@
     &nbsp;&nbsp;&nbsp;
     <router-link :to="{ path: '/overview' }">概览</router-link>
     &nbsp;&nbsp;&nbsp;
-    <router-link :to="{ path: '/vue3Vite' }">vue3</router-link>
+    <router-link :to="{ path: '/vue3' }">vue3</router-link>
     <router-view></router-view>
     <div id="cnbi-viewport"></div>
   </div>
